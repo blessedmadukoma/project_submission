@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-md-3"></div>
+        <didv style="margin-bottom: 150px; margin-top: 45px; background-color: rgb(233, 233, 233); border-radius: 10px;" class="col-md-6 py-3">
+            <h2 class="py-3 text-center" >Reset Password</h2>
+            <form action="" method="POST">
+                <div class="form-group">
+                    <label for="inputAddress">New Password</label>
+                    <input type="password" name="password" id="password" class="form-control" placeholder="Enter your new password"> <br>
+                    <label for="inputAddress">Confirm Password</label>
+                    <input type="password" name="confirm_pass" id="confirm_pass" class="form-control" placeholder="Enter your old password"> <br>
+                    <button style="background-color: rgb(185, 184, 184) !important;" type="submit" class="btn btn-dark" method="POST">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}

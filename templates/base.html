@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ASSIGNMENT SUBMISSION</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <style>
+        .navbar {
+            background-color: #787878;
+        }
+
+        .nav-link {
+            color: #ffffff;
+        }
+
+        .nav-link:hover {
+            color: #4EB358;
+        }
+
+        .btn-green {
+            background: #4EB358;
+            text-emphasis-color: #ffffff;
+        }
+
+        .btn-login {
+            background-color: #787878;
+        }
+        .btn-login:hover {
+            color: #b3b0b0;
+        }
+    </style>
+</head>
+
+<body>
+    {% include 'includes/_navbar.html' %}
+    <div class="container">
+        {% include 'includes/_messages.html' %}
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+
+</html>

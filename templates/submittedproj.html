@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form action="" method="post">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>S/N</th>
+                <th>Full Name</th>
+                <th>Email</th>
+                <th>Lecturer Email</th>
+                <th>File</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in rows %}
+            <tr>
+                <td>{{row['id']}}</td>
+                <td>{{row['last_name']}} {{row['first_name']}}</td>
+                <td>{{row['email']}}</td>
+                <td>{{row['lectemail']}}</td>
+                <td style="color: rgb(53, 61, 151);">{{row['file']}}</td>
+                <td><a href="/delete/{{row['id']}}" class="btn btn-danger btn-xs" onclick="return confirm('Are you sure to delete this info?')">Delete</a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</form>
+{% endblock %}

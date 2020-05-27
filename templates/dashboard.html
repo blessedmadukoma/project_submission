@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<p>Welcome {{ session.first_name }}!</p>
+    <p>This is your dashboard. <br>
+        To submit your project, click on the tab  <a href="{{ url_for('submitproj') }}">Submit Project</a>.<br>
+        To view submitted projects, click on the tab <a href="{{ url_for('submittedproj') }}">Submitted Projects</a>.</p>
+
+
+{% endblock %}
