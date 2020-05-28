@@ -1,6 +1,5 @@
 ASSIGNMENT SUBMISSION
-Created by Madukoma Blessed, https://github.com/madukomablessed/assignment_submissoin
-
+Created by Madukoma Blessed
 Summary of Project: 
 A website built with Flask whereby students can submit their documents and lecturers receive the document as a mail.
 After login, the student can view all the past submitted projects. 
